@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="page_hd" style='height:30px'></view>
+  <view class="page__bd page__bd_spacing">
+      <view class="kind-list">
+          <block wx:for="{{list}}" wx:key="id">
+              <view class="kind-list__item ">
+                <view class=" weui-cell__ft_in-access" style="margin-right:20px">
+                  <view id="{{item.id}}">
+                      <view class="weui-cells__titleSPP">{{item.name}}
+                        <image class="weui-grid__iconSP" src="{{item.srcSex}}"></image>
+                      </view>
+                      <view class="weui-cells__titleSP">{{item.city}}</view>
+                  </view>
+                </view>  
+              </view>
+          </block>
+      </view>
+  </view>
+
+
+
+
+
+
+
+</view>

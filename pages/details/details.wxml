@@ -1,0 +1,35 @@
+<!--pages/details/details.wxml-->
+<view> 
+  <view class="basicInfo" style="margin-top:10px">
+    <text style="font-size:15px">基本信息</text> 
+    <text style="font-size:15px">为什么显示*</text>
+  </view>
+
+  <view class="basicInfo">
+    <text class="box">姓名\n<text>{{name}}</text></text> 
+    <text class="box">性别\n<text>{{sex}}</text></text>
+    <text class="box">所在地\n<text>{{base}}</text></text>
+  </view>
+
+  <view class="detailInfo">
+    <view class="details">
+     <text >电话号码</text> 
+     <text>{{phoneNumber}}</text>
+    </view>
+
+    <view class="details">
+     <text >微信ID</text><text>{{wechatID}}</text>
+    </view>
+    <view class="details">
+     <text >微博</text><text>{{weibo}}</text>
+    </view>
+  </view>
+  
+  <view class="commentSpace" style="margin-top:2px">
+    <view class="textForm">上传人评价</view>
+    <view style=" word-break: break-all">{{comment}}</view>
+  </view>
+
+ 
+
+</view>

@@ -1,0 +1,13 @@
+page{
+  background-color: #eeeeee;
+}
+
+
+
+.guidence{
+   margin-top: 10px;
+}
+
+.sex{
+flex-wrap: nowrap; 
+}

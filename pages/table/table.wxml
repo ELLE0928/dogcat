@@ -1,0 +1,128 @@
+<view>
+  <view></view>
+  <view>
+    <view class="weui-cells__title" style="text-align:right">帮助</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label" st>姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" />
+          </view>
+          <view class="weui-cell__bd" style="border-left: 1px solid #E5E5E5;line-height: 2.58823529em;width:80px">
+              <view class="weui-label" style="padding-left:10px" >性别</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input"  />
+          </view>
+        </view>
+
+
+        <view class="weui-cell weui-cell_input ">
+            <view class="weui-cell__hd">
+                <view class="weui-label" st>身份证</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" />
+            </view>
+        </view>
+        
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label" st>联系电话</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" />
+            </view>
+        </view>
+
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label" st>城市</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" />
+            </view>
+        </view>
+    </view>
+   
+    <navigator url="../addMore/addMore">
+      <view class="Addmore" >
+        <image src="{{srcAdd}}"></image>
+        <text class="weui-cells__imgTip" >添加更多</text>
+      </view>
+    </navigator>
+
+    <view class="weui-cells__titleSP">事件详情</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="请输入文本" style="height: 9.7em" />
+                <view class="weui-textarea-counter">0/200</view>
+            </view>
+        </view>
+
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <view class="weui-uploader">
+                    <view class="weui-uploader__hd">
+                        <view class="weui-uploader__title">图片上传</view>
+                        <view class="weui-uploader__info">{{files.length}}/2</view>
+                    </view>
+                    <view class="weui-uploader__bd">
+                        <view class="weui-uploader__files" id="uploaderFiles">
+                            <block wx:for="{{files}}" wx:key="*this">
+                                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                    <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                </view>
+                            </block>
+                        </view>
+                        <view class="weui-uploader__input-box">
+                            <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+            <view class="weui-cell__hd">
+              <checkbox-group bindchange="bindAgreeChange">
+                  <label class="weui-agreeSP" for="weuiAgree">
+                      <view class="weui-agree__text">
+                          <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                          <view class="weui-agree__checkbox-icon">
+                              <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                          </view>
+                          阅读并同意<navigator url="" class="weui-agree__link">《隐私条约》</navigator>
+                      </view>
+                  </label>
+              </checkbox-group>
+            </view>
+            <view class="weui-cell__bd">
+
+            </view>
+            <view class="weui-cell__ft">
+                <view class="weui-vcode-btn">确定发布</view>
+            </view>
+        </view>
+
+      
+        
+    </view>
+
+
+
+
+      <view class="weui-cells weui-cells_after-title" style="margin-top:28px">
+
+      </view>
+
+ </view>
+         
+         
+       
+</view>

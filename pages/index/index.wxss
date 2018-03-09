@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+
+
+
+.page-section-ctn {
+  text-align: center;
+}
+
+.inputCenter{
+ width: 100%;
+ margin-left: 25%;
+ margin-right: 25%;
+
+
+}
+image{
+   width: 200px;
+   height: 150px;
+
+}
+
+
+input{
+ border: 1px solid black;
+ width: 50%;
+ text-align: left;
+ border-radius: 15px;
+ padding-left: 10px;
+}
+
+button{
+  margin:10px;
+}
+
+
+.rules{
+  font-size:12px;
+  text-decoration:underline;
+}
+

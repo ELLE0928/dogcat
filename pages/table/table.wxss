@@ -1,0 +1,52 @@
+page{
+  background-color: #eeeeee;
+}
+
+.tableInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  }
+
+text{
+  flex-basis:90px;
+  margin: 10px 10px 10px 10px;
+
+}
+
+image{
+  width: 30px;
+  height: 30px;
+  margin-top: .3em;
+  padding-left: 14px;
+
+}
+
+.weui-cells__imgTip {
+  display: flex;
+  color: #999999;
+  padding-right: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.Addmore{
+  display: flex;
+  justify-content: center;
+}
+
+.weui-cells__titleSP {
+
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999999;
+  font-size: 14px;
+}
+
+.weui-agreeSP {
+  display: block;
+
+  font-size: 13px;
+}

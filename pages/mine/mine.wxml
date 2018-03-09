@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="usersInfo">
+    <image src="{{srcMine}}"></image>
+      <view class="usersInfo-name">
+        <view class="name"> {{wechatName}}</view>
+        <view> 已发布{{toTweet}}条信息</view>
+      </view>
+  </view>
+
+
+  <view>
+
+    <view class="weui-cells weui-cells_after-title">
+        <navigator url="{{srcRecord}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">发布记录</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">{{countRecord}}</view>
+        </navigator>
+    </view>
+    <view class="weui-cells weui-cells_after-title" style="margin-top:20px">
+        <navigator url="{{srcQuestion}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" >
+            <view class="weui-cell__bd">常见问题</view>   
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>         
+        </navigator>
+        <navigator url="{{srcAbout}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">关于周阿姨小黑屋</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>  
+        </navigator>
+    </view>
+
+  </view>
+
+
+</view>

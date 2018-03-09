@@ -1,0 +1,4 @@
+<view class="box">
+  <view class="box-question">{{question}}</view>
+  <view  style=" word-break: break-all" >{{answer}}</view>
+</view>

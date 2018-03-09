@@ -1,0 +1,7 @@
+/* pages/about/about.wxss */
+
+.Logo{
+   width:150px;
+   height:100px;
+}
+

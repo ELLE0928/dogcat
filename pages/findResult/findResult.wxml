@@ -1,0 +1,17 @@
+<view >
+
+  <view class="guidence">在姓名类别下找到{{count}}条记录</view>
+
+  <navigator url="../details/details">
+    <view class="clickItem" >
+      <view class="sex">
+        <view class="text">{{name}}<image src="{{srcSex}}" class="icon"></image> </view>
+      
+      <view> {{province}}\t{{city}}</view>
+
+      </view>
+      <image src="{{srcEnter}}"   class="icon"></image>
+    </view>
+  </navigator>
+
+</view>

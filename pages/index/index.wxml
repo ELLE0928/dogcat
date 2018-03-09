@@ -1,0 +1,70 @@
+<!--index.wxml-->
+
+  <view class="container">
+    <view style="height:50px"></view>
+    <view class="page-body">
+      <view class="page-section page-section-gap">
+        <view class="page-section-ctn">
+          <image class="image" src="{{srcIndex}}"/>
+        </view>
+        <view class="page-section-ctn">
+          <text >{{line}}</text>
+        </view>   
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-ctn">
+          <view class="inputCenter">
+           <input placeholder-style="font-size:14px" placeholder="{{hint}}"  auto-focus/>
+          </view>
+          <checkbox-group bindchange="bindAgreeChange">
+              <label class="weui-agree" for="weuiAgree">
+                  <view class="weui-agree__text">
+                      <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                      <view class="weui-agree__checkbox-icon">
+                          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                      </view>
+                      阅读并同意<navigator url="" class="weui-agree__link">《周阿姨小黑屋》</navigator>隐私管理条例
+                  </view>
+              </label>
+          </checkbox-group>
+        </view>   
+      </view>
+
+      <navigator url='../table/table'>
+        <view class="page-section page-section-gap">
+          <view class="page-section-ctn">
+            <view class="button-sp-area">
+              <button type="primary" plain="true">我要发布</button>
+            </view>
+          </view>
+        </view>
+      </navigator>
+
+    </view>
+
+
+  </view>
+  
+
+   
+<!-- 
+    
+    <view class="rules">  
+      <label class="checkbox" wx:for="{{items}}">
+      <checkbox  value="{{item.name}}"/>{{item.value}}
+      </label>
+    </view>
+    <input placeholder-style="font-size:14px" placeholder="{{hint}}" auto-focus/>
+    
+    <navigator url='../table/table'>
+    <button> 我要发布 </button>
+
+          <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+        </view>
+      </view>
+     -->
+
+  

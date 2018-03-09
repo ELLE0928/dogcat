@@ -1,0 +1,11 @@
+/* pages/commonQuestion/commonQuestion.wxss */
+.box{
+  padding:7%;
+
+}
+
+.box-question{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:10px;
+}

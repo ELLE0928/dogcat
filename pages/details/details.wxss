@@ -1,0 +1,54 @@
+/* pages/details/details.wxss */
+page{
+  background-color: #eeeeee;
+}
+
+.basicInfo{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  height:40px;
+  background-color: white;
+  align-items: center;
+ 
+}
+
+.detailInfo{
+  display: flex;
+  width:100%;
+  height:120px;
+  background-color: white;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-top:20px; 
+}
+
+.box{
+  border:2px solid #eeeeee; 
+  flex-grow: 1;
+  text-align: center;
+  padding: 4px 4px;
+  line-height: center;
+}
+
+.details{
+  width:100%;
+  height:40px;
+  border: 2px solid #eeeeee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.commentSpace{
+  display: flex;
+  width:100%;
+  height:200px;
+  background-color: white;
+  flex-direction: column;
+ 
+}
+
+.textForm{
+  margin: 10px 10px 10px 10px;
+}
